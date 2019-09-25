@@ -1,0 +1,6 @@
+cmake CMakeLists.txt
+make
+echo Encrypting...
+./xorenc encrypt xorenc
+echo Decrypting...
+./xorenc decrypt archive.aiz
