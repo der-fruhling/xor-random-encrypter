@@ -1,3 +1,5 @@
 language: c++
 rvm:
   - g++
+script: ./.travis.sh
+os: linux
