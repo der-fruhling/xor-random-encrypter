@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="archiverize" targetName="archiverize" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5ff9a713-bea0-446f-881f-45aa9a896532" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1RJnfjJLRaw56hGZlDHOUbRTDkB" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="CMake Application.Extract">
+    <configuration name="Compress" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="archive archiverize" PASS_PARENT_ENVS_2="true" PROJECT_NAME="archiverize" TARGET_NAME="archiverize" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="archiverize" RUN_TARGET_NAME="archiverize">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Extract" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="extract archive.aiz" PASS_PARENT_ENVS_2="true" PROJECT_NAME="archiverize" TARGET_NAME="archiverize" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="archiverize" RUN_TARGET_NAME="archiverize">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="Compress" run_configuration_type="CMakeRunConfiguration" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.Compress" />
+      <item itemvalue="CMake Application.Extract" />
+    </list>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ff9a713-bea0-446f-881f-45aa9a896532" name="Default Changelist" comment="" />
+      <created>1569394171825</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569394171825</updated>
+      <workItem from="1569394173531" duration="1314000" />
+      <workItem from="1569428733587" duration="3345000" />
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="filename" language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

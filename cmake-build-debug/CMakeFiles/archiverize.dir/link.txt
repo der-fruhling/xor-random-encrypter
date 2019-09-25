@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/archiverize.dir/main.cpp.o CMakeFiles/archiverize.dir/archive/Archiver.cpp.o CMakeFiles/archiverize.dir/extract/UnArchiver.cpp.o  -o archiverize 
