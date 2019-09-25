@@ -9,7 +9,7 @@ Decrypt::Decrypt() {
     filename = "archive.bin";
 }
 
-Decrypt::~Decrypt() = default
+Decrypt::~Decrypt() = default;
 
 void Decrypt::decrypt(FILE *file) {
     fread(randomseeds, sizeof(long), 32, file);
@@ -17,10 +17,10 @@ void Decrypt::decrypt(FILE *file) {
     std::string *fdbg = &filename;
     const char *filenamec = fdbg->c_str();
     FILE *f = fopen(filenamec, "w");
-    if(f == NULL) {
+    if(f == nullptr) {
         remove(filenamec);
         f = fopen(filenamec, "w");
-        if(f == NULL) {
+        if(f == nullptr) {
             fprintf(stderr, "Error opening file '%s'\n", filenamec);
             exit(1);
         }
