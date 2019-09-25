@@ -11,8 +11,14 @@ Decrypt::Decrypt() {
 
 Decrypt::~Decrypt() = default;
 
-void Decrypt::decrypt(FILE *file) {
+void Decrypt::decrypt(const char *filen, const char *name) {
+    FILE *file = fopen(filen, "r");
     fread(randomseeds, sizeof(long), 32, file);
+    if(randomseeds[0] == 0xFFFFFFFFFFFFFFFF) {
+        fprintf(stderr, "This archive's keys have been seperated/extracted.\nTo decrypt this file, obtain keys.bin and put it in this directory.\nThen run '%s keys-insert %s'\nNow you can decrypt the file.\n", name, filen);
+        fclose(file);
+        return;
+    }
     if(file == nullptr) return;
     std::string *fdbg = &filename;
     const char *filenamec = fdbg->c_str();

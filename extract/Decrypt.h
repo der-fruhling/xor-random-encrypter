@@ -7,15 +7,16 @@
 
 
 #include <cstdio>
+#include <string>
 
 class Decrypt {
 private:
-    long randomseeds[32]{};
+    long randomseeds[32] {};
 public:
     Decrypt();
     ~Decrypt();
 
-    void decrypt(FILE *file);
+    void decrypt(const char *filen, const char *name);
 };
 
 
