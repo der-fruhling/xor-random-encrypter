@@ -1,4 +1,5 @@
 # xor-random-encrypter
+![Build image here](https://api.travis-ci.com/LiamCoal/xor-random-encrypter.svg?branch=master)  
 This was the result of me trying to build an Archiver, but getting distracted with the random function and xor.  
 It was fun to make anyways.  
 ## What this does
