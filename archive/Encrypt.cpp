@@ -1,31 +1,34 @@
 //
-// Created by liamcoal on 9/25/19.
+// Created by liamcoal on 9/24/19.
 //
 
-#include "UnArchiver.h"
-#include "../archive/Archiver.h"
+#include <random>
+#include "Encrypt.h"
 
-UnArchiver::UnArchiver() {
-    filename = "archive.bin";
+Encrypt::Encrypt() {
+    srandom(time(nullptr));
+    for (long & i : randomseeds) {
+        i = random();
+    }
+    filename = "archive.aiz";
 }
+Encrypt::~Encrypt() = default;
 
-UnArchiver::~UnArchiver() {
-
-}
-
-void UnArchiver::extract(FILE *file) {
-    fread(randomseeds, sizeof(long), 32, file);
+void Encrypt::encrypt(FILE *file) {
     if(file == nullptr) return;
     std::string *fdbg = &filename;
     const char *filenamec = fdbg->c_str();
     FILE *f = fopen(filenamec, "w");
-    if(f == NULL) {
+    if(f == nullptr) {
         remove(filenamec);
         f = fopen(filenamec, "w");
-        if(f == NULL) {
+        if(f == nullptr) {
             fprintf(stderr, "Error opening file '%s'\n", filenamec);
             exit(1);
         }
+    }
+    for (long & i : randomseeds) {
+        fwrite(&i, sizeof(long), 1, f);
     }
     unsigned long t;
     while(!feof(file)) {

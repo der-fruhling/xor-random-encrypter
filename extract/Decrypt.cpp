@@ -1,20 +1,18 @@
 //
-// Created by liamcoal on 9/24/19.
+// Created by liamcoal on 9/25/19.
 //
 
-#include <random>
-#include "Archiver.h"
+#include "Decrypt.h"
+#include "../archive/Encrypt.h"
 
-Archiver::Archiver() {
-    srandom(time(nullptr));
-    for (long & i : randomseeds) {
-        i = random();
-    }
-    filename = "archive.aiz";
+Decrypt::Decrypt() {
+    filename = "archive.bin";
 }
-Archiver::~Archiver() = default;
 
-void Archiver::compress(FILE *file) {
+Decrypt::~Decrypt() = default
+
+void Decrypt::decrypt(FILE *file) {
+    fread(randomseeds, sizeof(long), 32, file);
     if(file == nullptr) return;
     std::string *fdbg = &filename;
     const char *filenamec = fdbg->c_str();
@@ -26,9 +24,6 @@ void Archiver::compress(FILE *file) {
             fprintf(stderr, "Error opening file '%s'\n", filenamec);
             exit(1);
         }
-    }
-    for (long & i : randomseeds) {
-        fwrite(&i, sizeof(long), 1, f);
     }
     unsigned long t;
     while(!feof(file)) {

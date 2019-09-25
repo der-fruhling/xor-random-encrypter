@@ -1,3 +1,0 @@
-/home/liamcoal/Desktop/archiverize/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/liamcoal/Desktop/archiverize/cmake-build-debug/CMakeFiles/archiverize.dir
-/home/liamcoal/Desktop/archiverize/cmake-build-debug/CMakeFiles/edit_cache.dir

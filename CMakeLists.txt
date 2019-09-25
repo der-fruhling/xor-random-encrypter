@@ -3,4 +3,4 @@ project(archiverize)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(archiverize main.cpp archive/Archiver.cpp archive/Archiver.h extract/UnArchiver.cpp extract/UnArchiver.h)
+add_executable(archiverize main.cpp archive/Encrypt.cpp archive/Encrypt.h extract/Decrypt.cpp extract/Decrypt.h)
