@@ -7,6 +7,7 @@
 
 
 #include <string>
+#include "../archive/Encrypt.h"
 
 class KeyExtractor {
 public:

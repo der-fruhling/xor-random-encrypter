@@ -1,7 +1,3 @@
-//
-// Created by liamcoal on 9/24/19.
-//
-
 #include <random>
 #include "Encrypt.h"
 
