@@ -8,10 +8,11 @@
 
 #include <cstdio>
 #include <string>
+#include "../archive/Encrypt.h"
 
 class Decrypt {
 private:
-    long randomseeds[32] {};
+    long randomseeds[KEYCOUNT] {};
 public:
     Decrypt();
     ~Decrypt();

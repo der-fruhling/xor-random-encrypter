@@ -9,11 +9,14 @@
 #include <cstdio>
 #include <string>
 
+// Normally 32, but do as many as you want.
+#define KEYCOUNT 32
+
 static std::string filename;
 
 class Encrypt {
 private:
-    long randomseeds[32]{};
+    long randomseeds[KEYCOUNT]{};
 public:
     Encrypt();
     ~Encrypt();
