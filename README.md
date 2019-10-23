@@ -31,8 +31,9 @@ cmake --build ./cmake-build-debug --target xorenc -- -j 2
 
 ## Plans (maybe)
 
-- [ ] Option to increase number of keys?
+_No plans right now_
 
 ## Done Plans
 
 - [x] Key extractor!
+- [x] Option to increase number of keys!
