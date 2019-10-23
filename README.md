@@ -31,7 +31,7 @@ cmake --build ./cmake-build-debug --target xorenc -- -j 2
 
 ## Plans (maybe)
 
-_No plans right now_
+_No plans right now, but feel free to suggest something_
 
 ## Done Plans
 
